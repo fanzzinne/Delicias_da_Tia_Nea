@@ -92,6 +92,9 @@
                     <span class="text-sm font-bold text-slate-800 flex items-center gap-1">
                         Pedido Rápido Via WhatsApp <i class="fa-solid fa-chevron-down text-[10px] text-[#b91c1c]"></i>
                     </span>
+                    <a href="https://www.google.com/maps/place/Av.+Colorado,+441+-+Santa+M%C3%B4nica,+Guarapari+-+ES,+29221-040/@-20.621569,-40.4563873,17z/data=!3m1!4b1!4m6!3m5!1s0xb85a18318c9a57:0x5976a4df29ba3d4a!8m2!3d-20.621574!4d-40.4538124!16s%2Fg%2F11csc65wfs?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-[11px] font-bold text-[#b91c1c] flex items-center gap-1 mt-1 hover:opacity-80 transition-opacity">
+                        <i class="fa-solid fa-location-dot"></i> Ver Localização
+                    </a>
                 </div>
             </div>
             <button onclick="toggleCart()" class="relative p-2.5 bg-slate-50 rounded-full text-slate-600">
@@ -134,6 +137,27 @@
             </div>
             <p class="text-slate-500 font-semibold">Nenhum item encontrado.</p>
             <p class="text-slate-400 text-xs mt-1">Tente buscar por outro termo.</p>
+        </div>
+
+        <!-- Seção Localização -->
+        <div class="mt-12 bg-white rounded-[32px] p-6 shadow-sm border border-slate-100">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center text-[#b91c1c]">
+                    <i class="fa-solid fa-location-dot text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-800">Nossa Localização</h3>
+                    <p class="text-xs text-slate-400">Venha nos visitar ou retire seu pedido</p>
+                </div>
+            </div>
+            <p class="text-sm text-slate-600 mb-4 font-medium">
+                <i class="fa-solid fa-map-pin text-[#b91c1c] mr-2"></i>
+                Av. Colorado, 441 - Santa Mônica, Guarapari - ES
+            </p>
+            <a href="https://www.google.com/maps/place/Av.+Colorado,+441+-+Santa+M%C3%B4nica,+Guarapari+-+ES,+29221-040/@-20.621569,-40.4563873,17z/data=!3m1!4b1!4m6!3m5!1s0xb85a18318c9a57:0x5976a4df29ba3d4a!8m2!3d-20.621574!4d-40.4538124!16s%2Fg%2F11csc65wfs?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-slate-800 transition-all w-full md:w-auto justify-center">
+                <i class="fa-solid fa-route"></i>
+                Abrir no Google Maps
+            </a>
         </div>
     </main>
 
@@ -237,14 +261,15 @@
 
                 <div id="address-field" class="space-y-4">
                     <div class="relative">
-                        <label class="text-[10px] font-bold text-slate-400 uppercase ml-4 mb-1 block">Bairro</label>
+                        <label class="text-[10px] font-bold text-slate-400 uppercase ml-4 mb-1 block">Bairro/Pousada</label>
                         <select id="client-neighborhood" onchange="updateDeliveryFee()" class="w-full p-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-[#b91c1c]/10 focus:bg-white focus:ring-0 outline-none transition-all text-sm font-bold appearance-none">
                             <option value="0">Selecione seu bairro...</option>
                             <option value="0">Santa Mônica/Setiba/Perocão - Grátis</option>
+
                         </select>
                     </div>
                     <div class="relative">
-                        <label class="text-[10px] font-bold text-slate-400 uppercase ml-4 mb-1 block">Endereço/Pousada</label>
+                        <label class="text-[10px] font-bold text-slate-400 uppercase ml-4 mb-1 block">Endereço</label>
                         <input type="text" id="client-street" placeholder="Rua, número e complemento" class="w-full p-4 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-[#b91c1c]/10 focus:bg-white focus:ring-0 outline-none transition-all text-sm font-medium">
                     </div>
                 </div>
