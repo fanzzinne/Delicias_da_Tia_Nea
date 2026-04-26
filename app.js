@@ -214,7 +214,8 @@ function openOptions(id) {
         </div>
     `;
 
-    document.getElementById('options-modal').classList.remove('translate-y-full');
+    const modal = document.getElementById('options-modal');
+    modal.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
     document.getElementById('options-overlay').classList.add('open');
 }
 
@@ -243,7 +244,8 @@ function setRating(productId, value) {
 }
 
 function closeOptionsModal() {
-    document.getElementById('options-modal').classList.add('translate-y-full');
+    const modal = document.getElementById('options-modal');
+    modal.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
     document.getElementById('options-overlay').classList.remove('open');
 }
 
