@@ -196,7 +196,7 @@ function openOptions(id) {
         </div>
 
         <div class="space-y-3">
-            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Escolha o tamanho:</p>
+            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Excelente Escolha:</p>
             ${p.opcoes.length > 0 ? p.opcoes.map(opt => `
                 <button onclick="addToCart('${p.id}', null, '${opt.nome}', ${opt.preço})" class="w-full flex justify-between items-center p-4 bg-slate-50 hover:bg-slate-100 rounded-2xl transition-all border border-transparent hover:border-[#b91c1c]/20 group">
                     <span class="font-bold text-slate-700">${opt.nome}</span>
